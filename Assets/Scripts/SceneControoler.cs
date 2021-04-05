@@ -21,6 +21,11 @@ public class SceneControoler : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void StartExp()
+    {
+        GameObject.FindGameObjectWithTag("cart").GetComponent<IntroController>().PlayIntroAudio();
+    }
+
     // Update is called once per frame
   public void StartExperiecen()
    {
